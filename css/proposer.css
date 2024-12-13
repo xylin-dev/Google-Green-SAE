@@ -1,0 +1,99 @@
+input:not([type="submit"],[type="reset"]){
+  width:300px;
+  height:30px;
+  font-size:15px;
+  
+}
+input:not([type="submit"],[type="reset"]):focus{
+  border-color: blue;
+  outline-color: lightblue;
+  outline-style: solid;
+  color:blue;
+}
+
+input[type="submit"]{
+  border-radius: 100px 100px 100px 100px / 75px 75px 75px 75px;
+  background-color:blue;
+  color:white;
+  margin-left:40%;
+  width:15%;
+  height:30px;
+}
+input[type="submit"]:hover{
+  border-radius: 80px 80px 80px 80px / 75px 75px 75px 75px;
+  background-color:darkblue;
+  color:white;
+  
+}
+input[type="reset"]{
+  border-style: none;
+  background-color: white;
+  color:blue;
+  
+}
+input[type="reset"]:hover{
+  background-color:lightblue;
+  border-radius: 80px 80px 80px 80px / 75px 75px 75px 75px;
+}
+input[type="number"]{
+  width:50px;
+}
+input[type="date"]{
+  text-align: center;
+  width:150px;
+}
+select{
+  background-color: lightgrey;
+  border-radius: 75px/75px;
+  width:200px;
+  height:35px;
+}
+select:focus{
+  background-color: lightblue;
+  border-radius: 75px/75px;
+}
+fieldset{
+  border-color: darkgrey;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px/15px;
+  height:70%;
+  display:grid;
+  grid-template-rows:repeat(6,1fr);
+  margin:5%;
+}
+main{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 30% 40%;
+}
+fieldset>*:not(legend){
+  text-align:center;
+}
+img[alt="covoiturez"]{
+  float:left;
+  width:200px;
+  margin-left:50%;
+  
+}
+main>p{
+  text-align:center;
+  width:85%;
+  padding:10%;
+  line-height: 27px;
+  background-color:lightgrey;
+  border-style:solid;
+  border-width: 3px 0px;
+  border-color:darkgrey;
+}
+legend{
+  border-style: solid;
+  border-radius:10px;
+  border-color:darkgrey;
+  background-color:lightgrey;
+  cursor:default;
+}
+form{
+  margin-bottom:5%;
+}
+

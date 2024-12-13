@@ -1,0 +1,133 @@
+main {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #606367;
+    border-radius: 50px;
+}
+
+.search input {
+    width: 94%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.filtre {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.style {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.filtre form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+}
+
+.filtre form select {
+    padding: 1.06em;
+    border-radius: 10px;
+    border: 1px solid #606367;
+}
+
+.filtre form [type="date"] {
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #606367;
+}
+
+.filtre form [type="reset"] {
+    padding: 1.06em;
+    background: none;
+    border: 1px solid #606367;
+    border-radius: 10px;
+}
+
+.trajet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.destination {
+    border: 1px solid #606367;
+    border-radius: 10px;
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.destination:hover{
+    box-shadow: 5px 5px 5px #606367;
+}
+
+.destination .detail {
+    width: 90%;
+}
+
+.destination img {
+    margin-bottom: 10px;
+}
+
+.detail a {
+    color: #1b6ad5;
+    font-weight: 500;
+}
+
+.plus {
+    margin-top: 25px;
+    border: 1px solid #606367;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.plus:hover {
+    background-color: #606367;
+    color: white;
+}

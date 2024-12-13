@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechercher un trajet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rechercher.css">
+    <link rel="shortcut icon" href="../img/search.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>         
+            <img src="../img/logo.png" width="180px" alt="logo">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>Services
+                <ul class="menu">
+                    <li><a href="proposer.html">Proposer un trajet</a></li>
+                    <li><a href="rechercher.html">Recherche de trajet</a></li>
+                    <li><a href="location.html">Louer un véhicule</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+        <a href="login/login.html" class="login">Se Connecter</a>
+    </nav>
+
+    <main>
+        <div class="icon">
+            <img src="../img/search.png" alt="icon" width="180px">
+            <p class="title">Rechercher un trajet</p>
+        </div>
+
+        <div class="search">
+            <img src="../img/input-search.png" alt="icon-search" width="40px">
+            <input type="search" name="Recherche" id="input-search" value="Entrer une destination ou adresse...">
+        </div>
+
+        <div class="filtre">
+            <p class="style">Filtre :</p>
+            <form action="#">
+                <select name="départ">
+                    <option>Point de départ</option>
+                    <option value="02">Aisne</option>
+                    <option value="03">Allier</option>
+                    <option value="04">Alpes-de-Haute-Provence</option>
+                    <option value="05">Hautes-Alpes</option>
+                    <option value="06">Alpes-Maritimes</option>
+                    <option value="07">Ardèche</option>
+                    <option value="08">Ardennes</option>
+                    <option value="09">Ariège</option>
+                    <option value="10">Aube</option>
+                    <option value="11">Aude</option>
+                    <option value="12">Aveyron</option>
+                    <option value="13">Bouches-du-Rhône</option>
+                    <option value="14">Calvados</option>
+                    <option value="15">Cantal</option>
+                    <option value="16">Charente</option>
+                    <option value="17">Charente-Maritime</option>
+                    <option value="18">Cher</option>
+                    <option value="19">Corrèze</option>
+                    <option value="2A">Corse-du-Sud</option>
+                    <option value="2B">Haute-Corse</option>
+                    <option value="21">Côte-d'Or</option>
+                    <option value="22">Côtes-d'Armor</option>
+                    <option value="23">Creuse</option>
+                    <option value="24">Dordogne</option>
+                    <option value="25">Doubs</option>
+                    <option value="26">Drôme</option>
+                    <option value="27">Eure</option>
+                    <option value="28">Eure-et-Loir</option>
+                    <option value="29">Finistère</option>
+                    <option value="30">Gard</option>
+                    <option value="31">Haute-Garonne</option>
+                    <option value="32">Gers</option>
+                    <option value="33">Gironde</option>
+                    <option value="34">Hérault</option>
+                    <option value="35">Ille-et-Vilaine</option>
+                    <option value="36">Indre</option>
+                    <option value="37">Indre-et-Loire</option>
+                    <option value="38">Isère</option>
+                    <option value="39">Jura</option>
+                    <option value="40">Landes</option>
+                    <option value="41">Loir-et-Cher</option>
+                    <option value="42">Loire</option>
+                    <option value="43">Haute-Loire</option>
+                    <option value="44">Loire-Atlantique</option>
+                    <option value="45">Loiret</option>
+                    <option value="46">Lot</option>
+                    <option value="47">Lot-et-Garonne</option>
+                    <option value="48">Lozère</option>
+                    <option value="49">Maine-et-Loire</option>
+                    <option value="50">Manche</option>
+                    <option value="51">Marne</option>
+                    <option value="52">Haute-Marne</option>
+                    <option value="53">Mayenne</option>
+                    <option value="54">Meurthe-et-Moselle</option>
+                    <option value="55">Meuse</option>
+                    <option value="56">Morbihan</option>
+                    <option value="57">Moselle</option>
+                    <option value="58">Nièvre</option>
+                    <option value="59">Nord</option>
+                    <option value="60">Oise</option>
+                    <option value="61">Orne</option>
+                    <option value="62">Pas-de-Calais</option>
+                    <option value="63">Puy-de-Dôme</option>
+                    <option value="64">Pyrénées-Atlantiques</option>
+                    <option value="65">Hautes-Pyrénées</option>
+                    <option value="66">Pyrénées-Orientales</option>
+                    <option value="67">Bas-Rhin</option>
+                    <option value="68">Haut-Rhin</option>
+                    <option value="69">Rhône</option>
+                    <option value="70">Haute-Saône</option>
+                    <option value="71">Saône-et-Loire</option>
+                    <option value="72">Sarthe</option>
+                    <option value="73">Savoie</option>
+                    <option value="74">Haute-Savoie</option>
+                    <option value="75">Paris</option>
+                    <option value="76">Seine-Maritime</option>
+                    <option value="77">Seine-et-Marne</option>
+                    <option value="78">Yvelines</option>
+                    <option value="79">Deux-Sèvres</option>
+                    <option value="80">Somme</option>
+                    <option value="81">Tarn</option>
+                    <option value="82">Tarn-et-Garonne</option>
+                    <option value="83">Var</option>
+                    <option value="84">Vaucluse</option>
+                    <option value="85">Vendée</option>
+                    <option value="86">Vienne</option>
+                    <option value="87">Haute-Vienne</option>
+                    <option value="88">Vosges</option>
+                    <option value="89">Yonne</option>
+                    <option value="90">Territoire de Belfort</option>
+                    <option value="91">Essonne</option>
+                    <option value="92">Hauts-de-Seine</option>
+                    <option value="93">Seine-Saint-Denis</option>
+                    <option value="94">Val-de-Marne</option>
+                    <option value="95">Val-d'Oise</option>
+                </select>
+                <select name="destination">
+                    <option>Destination</option>
+                    <option value="02">Aisne</option>
+                    <option value="03">Allier</option>
+                    <option value="04">Alpes-de-Haute-Provence</option>
+                    <option value="05">Hautes-Alpes</option>
+                    <option value="06">Alpes-Maritimes</option>
+                    <option value="07">Ardèche</option>
+                    <option value="08">Ardennes</option>
+                    <option value="09">Ariège</option>
+                    <option value="10">Aube</option>
+                    <option value="11">Aude</option>
+                    <option value="12">Aveyron</option>
+                    <option value="13">Bouches-du-Rhône</option>
+                    <option value="14">Calvados</option>
+                    <option value="15">Cantal</option>
+                    <option value="16">Charente</option>
+                    <option value="17">Charente-Maritime</option>
+                    <option value="18">Cher</option>
+                    <option value="19">Corrèze</option>
+                    <option value="2A">Corse-du-Sud</option>
+                    <option value="2B">Haute-Corse</option>
+                    <option value="21">Côte-d'Or</option>
+                    <option value="22">Côtes-d'Armor</option>
+                    <option value="23">Creuse</option>
+                    <option value="24">Dordogne</option>
+                    <option value="25">Doubs</option>
+                    <option value="26">Drôme</option>
+                    <option value="27">Eure</option>
+                    <option value="28">Eure-et-Loir</option>
+                    <option value="29">Finistère</option>
+                    <option value="30">Gard</option>
+                    <option value="31">Haute-Garonne</option>
+                    <option value="32">Gers</option>
+                    <option value="33">Gironde</option>
+                    <option value="34">Hérault</option>
+                    <option value="35">Ille-et-Vilaine</option>
+                    <option value="36">Indre</option>
+                    <option value="37">Indre-et-Loire</option>
+                    <option value="38">Isère</option>
+                    <option value="39">Jura</option>
+                    <option value="40">Landes</option>
+                    <option value="41">Loir-et-Cher</option>
+                    <option value="42">Loire</option>
+                    <option value="43">Haute-Loire</option>
+                    <option value="44">Loire-Atlantique</option>
+                    <option value="45">Loiret</option>
+                    <option value="46">Lot</option>
+                    <option value="47">Lot-et-Garonne</option>
+                    <option value="48">Lozère</option>
+                    <option value="49">Maine-et-Loire</option>
+                    <option value="50">Manche</option>
+                    <option value="51">Marne</option>
+                    <option value="52">Haute-Marne</option>
+                    <option value="53">Mayenne</option>
+                    <option value="54">Meurthe-et-Moselle</option>
+                    <option value="55">Meuse</option>
+                    <option value="56">Morbihan</option>
+                    <option value="57">Moselle</option>
+                    <option value="58">Nièvre</option>
+                    <option value="59">Nord</option>
+                    <option value="60">Oise</option>
+                    <option value="61">Orne</option>
+                    <option value="62">Pas-de-Calais</option>
+                    <option value="63">Puy-de-Dôme</option>
+                    <option value="64">Pyrénées-Atlantiques</option>
+                    <option value="65">Hautes-Pyrénées</option>
+                    <option value="66">Pyrénées-Orientales</option>
+                    <option value="67">Bas-Rhin</option>
+                    <option value="68">Haut-Rhin</option>
+                    <option value="69">Rhône</option>
+                    <option value="70">Haute-Saône</option>
+                    <option value="71">Saône-et-Loire</option>
+                    <option value="72">Sarthe</option>
+                    <option value="73">Savoie</option>
+                    <option value="74">Haute-Savoie</option>
+                    <option value="75">Paris</option>
+                    <option value="76">Seine-Maritime</option>
+                    <option value="77">Seine-et-Marne</option>
+                    <option value="78">Yvelines</option>
+                    <option value="79">Deux-Sèvres</option>
+                    <option value="80">Somme</option>
+                    <option value="81">Tarn</option>
+                    <option value="82">Tarn-et-Garonne</option>
+                    <option value="83">Var</option>
+                    <option value="84">Vaucluse</option>
+                    <option value="85">Vendée</option>
+                    <option value="86">Vienne</option>
+                    <option value="87">Haute-Vienne</option>
+                    <option value="88">Vosges</option>
+                    <option value="89">Yonne</option>
+                    <option value="90">Territoire de Belfort</option>
+                    <option value="91">Essonne</option>
+                    <option value="92">Hauts-de-Seine</option>
+                    <option value="93">Seine-Saint-Denis</option>
+                    <option value="94">Val-de-Marne</option>
+                    <option value="95">Val-d'Oise</option>
+                </select>
+                <input type="date">
+                <input type="reset" value="Réinitialiser">
+            </form>
+        </div>
+
+        <div class="trajet">
+            <div class="destination">
+                <p class="style">Alpes du Nord</p>
+                <img src="../img/randonnee.png" alt="img" width="100px">
+                <div class="detail">
+                    <p>Véhicule: Voiture</p>
+                    <p>Destination: Massif des Bauges</p>
+                    <p>Date de départ: 05/01/2025</p>
+                    <p>Nombre de place disponible: 6</p>
+                    <p>Prix: Gratuit</p>
+                    <a href="#"><center>En savoir plus</center></a>
+                </div>
+            </div>
+
+            <div class="destination">
+                <p class="style">Hôtel au Mont-Saint-Michel</p>
+                <img src="../img/hotel.png" alt="img" width="100px">
+                <div class="detail">
+                    <p>Véhicule: Voiture</p>
+                    <p>Destination: Mont-Saint-Michel</p>
+                    <p>Date de départ: 14/12/2024</p>
+                    <p>Nombre de place disponible: 3</p>
+                    <p>Prix: 6.99€</p>
+                    <a href="#"><center>En savoir plus</center></a>
+                </div>
+            </div>
+
+            <div class="destination">
+                <p class="style">Marché de Noël</p>
+                <img src="../img/sapin-de-noel.png" alt="img" width="100px">
+                <div class="detail">
+                    <p>Véhicule: Train</p>
+                    <p>Destination: Bellaing</p>
+                    <p>Date de départ: 20/12/2024</p>
+                    <p>Nombre de place disponible: 33</p>
+                    <p>Prix: 19.99€</p>
+                    <a href="#"><center>En savoir plus</center></a>
+                </div>
+            </div>
+        </div>
+        <div class="plus">Voir davantage</div>
+    </main>
+
+    <footer>
+        <div class="reseaux">
+            <ul>
+                <li>Suivez-nous</li>
+                <li><a href="https://instagram.com/google/"><img src="../img/instagram.png" alt="instagram" width="25px"></a></li>
+                <li><a href="https://www.youtube.com/user/Google"><img src="../img/youtube.png" alt="youtube" width="25px"></a></li>
+                <li><a href="https://twitter.com/google"><img src="../img/twitter.png" alt="twitter" width="25px"></a></li>
+                <li><a href="https://www.facebook.com/Google"><img src="../img/facebook.png" alt="facebook" width="25px"></a></li>
+                <li><a href="https://www.linkedin.com/company/google"><img src="../img/linkedin.png" alt="linkedin" width="25px"></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <a href="https://www.google.com/?_ga=2.55847531.1749503220.1732133987-83650453.1732122980"><img src="../img/glue-google-solid-logo.svg" alt="logo"></a>
+                <li><a href="https://support.google.com/?hl=ALL">Aide</a></li>
+                <li><a href="https://www.google.com/policies/privacy/">Confidentialité</a></li>
+                <li><a href="https://www.google.com/policies/terms/">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

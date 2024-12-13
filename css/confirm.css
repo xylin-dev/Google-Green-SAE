@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #023E8A;
+    margin: 0;
+    padding: 0;
+}
+
+body div.border{
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+body div.bordersup{
+    border: 5px solid #B5E549;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+body .title{
+    font-weight: 700;
+    font-size: 3em;
+    color: #B5E549;
+    margin: 0;
+}
+
+body .description{
+    font-size: 1.5em;
+    color: white;
+}
+
+body a {
+    color: #E4A0F7;
+    font-size: 1.2em;
+    font-weight: 700;
+}

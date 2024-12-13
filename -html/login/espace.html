@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Compte</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/espace.css">
+    <link rel="shortcut icon" href="../../img/google.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>         
+            <img src="../../img/logo.png" width="180px" alt="logo">
+            <li><a href="../../index.html">Accueil</a></li>
+            <li>Services
+                <ul class="menu">
+                    <li><a href="../proposer.html">Proposer un trajet</a></li>
+                    <li><a href="../rechercher.html">Recherche de trajet</a></li>
+                    <li><a href="../location.html">Louer un véhicule</a></li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../newsletter.html">Newsletter</a></li>
+        </ul>
+        <a href="espace.html" class="profil"><img src="../../img/OIP.jpeg" alt="profil" width="50px"></a>
+    </nav>
+
+    <main>
+        <div class="nav">
+            <ul>
+                <a href="#accueil"><li><img src="../../img/user.png" alt="icon" width="40px"> Accueil</li></a>
+                <a href="#info"><li><img src="../../img/personal-info.png" alt="icon" width="40px"> Information personelle</li></a>
+                <a href="#historiqueT"><li><img src="../../img/paiement.png" alt="icon" width="40px"> Historique de trajet</li></a>
+                <a href="#historiqueL"><li><img src="../../img/cle.png" alt="icon" width="40px"> Historique de location</li></a>
+                <a href="#paiement"><li><img src="../../img/paiement-par-carte.png" alt="icon" width="40px"> Paiements & abonnements</li></a>
+            </ul>
+        </div>
+
+        <div class="contain">
+            <div id="accueil">
+                <img src="../../img/OIP.jpeg" alt="profil" width="250px">
+                <p class="title">Bienvenue Nyan Cat</p>
+                <p>Sur cette section, vous avez un aperçu complet de votre dernière expérience de transport et de location. Vous pouvez facilement consulter les détails de votre dernier trajet effectué ainsi que les informations relatives à votre dernière location, pour suivre vos activités récentes en toute simplicité.</p>
+                <div class="historique">
+                    <div class="trajet">
+                        <p class="title">Dernier trajet effectuer</p>
+                        <ul>
+                            <center><img src="../../img/trajet.png" alt="icon" width="150px"></center>
+                            <li><img src="../../img/départ.png" alt="icon" width="40px"> Point de départ : Lille Flandres</li>
+                            <li><img src="../../img/destination.png" alt="icon" width="40px"> Destination : Paris CDG</li>
+                            <li><img src="../../img/date.png" alt="icon" width="40px"> Date et Heure : 24/11/2024 à 19h00</li>
+                            <li><img src="../../img/transport.png" alt="icon" width="40px"> Mode de transport : Train</li>
+                            <li><img src="../../img/cout.png" alt="icon" width="40px"> Coût : 11€</li>
+                        </ul>
+                        <a href="#historiqueT">Voir tous les historique de trajets</a>
+                    </div>
+                    <div class="location">
+                        <p class="title">Dernier location effectuer</p>
+                        <ul>
+                            <center><img src="../../img/enregistrement.png" alt="icon" width="150px"></center>
+                            <li><img src="../../img/transport.png" alt="icon" width="40px"> Véhicule Loué : Vélo</li>
+                            <li><img src="../../img/localisation.png" alt="icon" width="40px"> Lieu de location : Lille</li>
+                            <li><img src="../../img/début.png" alt="icon" width="40px"> Date de location : 29/11/2024</li>
+                            <li><img src="../../img/fin.png" alt="icon" width="40px"> Date de retour prévue : 31/11/2024</li>
+                            <li><img src="../../img/cout.png" alt="icon" width="40px"> Montant payé : 1.50€</li>
+                        </ul>
+                        <a href="#historiqueL">Voir tous les historique de trajets</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="info">
+                <p class="title">Informations Personnelles</p>
+                <p> Information sur vous et vos préférences dans les services Google Green</p>                
+                <div class="description">
+                    <p><span class="title">Les informations de votre profil dans les services Google Green</span><br><br>
+                    Sur cette section, vous pouvez consulter et mettre à jour toutes vos informations personnelles pour garantir que votre profil soit toujours à jour. Vous avez la possibilité de modifier vos données de contact, vos préférences de communication et bien plus encore, pour personnaliser votre expérience selon vos besoins.</p>
+                    <img src="../../img/profile.png" alt="img_profile" width="600px">
+                </div>
+                <div class="container">
+                    <p class="heading">Information Basique</p>
+                    <p>Certaines informations peuvent être visibles par d'autres personnes utilisant les services Google Green.</p>
+                    
+                    <div class="contenu">
+                        <ul>
+                            <li class="gauche">Photo de profil</li>
+                            <li class="milieu">Ajoutez une photo de profile</li>
+                            <li class="droite"><img src="../../img/OIP.jpeg" alt="profil" width="100px"></li>   
+                        </ul>
+
+                        <ul>
+                            <li class="gauche">Nom</li>
+                            <li class="milieu">Votre Nom Complet</li>
+                            <li class="droite"><input type="text" value="Nyan Cat"></li> 
+                        </ul>
+
+                        <ul>
+                            <li class="gauche">Date de naissance</li>
+                            <li class="milieu">Votre Date de Naissance</li>
+                            <li class="droite"><input type="date" value="1995-12-10"></li>  
+                        </ul>
+
+                        <ul>
+                            <li class="gauche">Genre</li>
+                            <li class="milieu">Votre Genre</li>
+                            <li class="droite">
+                                <select>
+                                    <option>Ne pas partager</option>
+                                    <option>Homme</option>
+                                    <option>Femme</option>
+                                    <option>Autre</option>
+                                </select>
+                            </li>   
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p class="heading">Information Contact</p>
+                    
+                    <div class="contenu">
+                        <ul>
+                            <li class="gauche">Email</li>
+                            <li class="milieu">Adresse de contact par défaut</li>
+                            <li class="droite"><input type="email" value="nyan.cat@gmail.com"></li> 
+                        </ul>
+
+                        <ul>
+                            <li class="gauche">Numéro de téléphone</li>
+                            <li class="milieu">Numéro de contact par défaut</li>
+                            <li class="droite"><input type="text" value="06 70 25 25 11"></li>  
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p class="heading">Adresse</p>
+                    
+                    <div class="contenu">
+                        <ul>
+                            <li class="gauche">Maison</li>
+                            <li class="milieu">Adresse Domicile</li>
+                            <li class="droite"><input type="text" value="27 Rue Simple, 59000 Lille"></li> 
+                        </ul>
+
+                        <ul>
+                            <li class="gauche">Travaille</li>
+                            <li class="milieu">Adresse Travaille</li>
+                            <li class="droite"><input type="text" value="Avenue du Travailleur"></li>  
+                        </ul> 
+
+                        <ul>
+                            <li class="gauche">Autre</li>
+                            <li class="milieu">Autre Adresse</li>
+                            <li class="droite"><input type="text" value=""></li>  
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="historiqueT">
+                <p class="title">Historique des Trajets</p>
+                <p>Informations sur les trajets effectués, dates, itinéraires et durées.</p>
+                <div class="trajet">
+                    <div class="destination">
+                        <p class="style">Gare Lille Flandres</p>
+                        <img src="../../img/gare.png" alt="img" width="150px">
+                        <div class="detail">
+                            <p>Véhicule: Vélo</p>
+                            <p>Point de départ: Tourcoing - Centre de Gaulle</p>
+                            <p>Destination: Lille Flandres</p>
+                            <p>Date de départ: 30/11/2024</p>
+                            <p>Heure : 13h35</p>
+                            <p>Distance parcourue : ~12.2km</p>
+                            <p>Durée du trajet : 50 min</p>
+                            <p>Réduction Bilan Carbone : ~99%</p>
+                            <p>Commentaires personnels : N/A</p>
+                            <p>Prix: Location Vélo (1.50€)</p>
+                            <a href="#"><center>En savoir plus</center></a>
+                        </div>
+                    </div>
+        
+                    <div class="destination">
+                        <p class="style">Musée Lumière Lyon</p>
+                        <img src="../../img/musee-anglais.png" alt="img" width="150px">
+                        <div class="detail">
+                            <p>Véhicule: Covoiturage Electrique</p>
+                            <p>Point de départ: Villeneuve-d'Ascq - Triolo</p>
+                            <p>Destination: Lyon - Rue du Premier Film</p>
+                            <p>Date de départ: 21/10/2024</p>
+                            <p>Heure : 7h50</p>
+                            <p>Distance parcourue : 695km</p>
+                            <p>Durée du trajet : 6h52 min</p>
+                            <p>Réduction Bilan Carbone : ~85%</p>
+                            <p>Commentaires personnels : N/A</p>
+                            <p>Prix: 5.5€</p>
+                            <a href="#"><center>En savoir plus</center></a>
+                        </div>
+                    </div>
+        
+                    <div class="destination">
+                        <p class="style">Olympic Games Paris 2024</p>
+                        <img src="../../img/olympics.png" alt="img" width="150px">
+                        <div class="detail">
+                            <p>Véhicule: TGV INOUI (Partenaire)</p>
+                            <p>Point de départ: Villeneuve-d'Ascq - Pont de Bois</p>
+                            <p>Destination: Paris CDG</p>
+                            <p>Date de départ: 26/07/2024</p>
+                            <p>Heure : 10h15</p>
+                            <p>Distance parcourue : 197km</p>
+                            <p>Durée du trajet : ~1h25 min</p>
+                            <p>Réduction Bilan Carbone : ~90%</p>
+                            <p>Commentaires personnels : N/A</p>
+                            <p>Prix: 10.5€</p>
+                            <a href="#"><center>En savoir plus</center></a>
+                        </div>
+                    </div>
+                </div>
+                <center><div class="plus">Voir davantage</div></center>
+            </div>
+
+            <div id="historiqueL">
+                <p class="title">Historique des Locations</p>
+                <p>Information sur le véhicule loué, les dates, l'état du véhicule et les prix.</p>
+                <div class="trajet">
+                    <div class="destination">
+                        <p class="style">Gazelle Ultimate T10</p>
+                        <img src="../../img/velo.png" alt="img" width="150px">
+                        <div class="detail">
+                            <p>Date de début de la location : 29/11/2024</p>
+                            <p>Date de fin de la location : 31/11/2024</p>
+                            <p>Durée de la location : 2 jours</p>
+                            <p>Lieu de location : Lille</p>
+                            <p>Description de l'état du bien : Très bonne état</p>
+                            <p>Incidents ou dommages : N/A</p>
+                            <p>Pannes ou réparations : N/A</p>
+                            <p>Retour du bien : Très bonne état</p>
+                            <p>Notes sur le locataire : ⭐⭐⭐⭐⭐</p>
+                            <p>Montant de la location : 1.50€</p>
+                            <a href="#"><center>En savoir plus</center></a>
+                        </div>
+                    </div>
+        
+                    <div class="destination">
+                        <p class="style">Dualtron Ultra 2</p>
+                        <img src="../../img/scooter-electrique.png" alt="img" width="150px">
+                        <div class="detail">
+                            <p>Date de début de la location : 01/10/2024</p>
+                            <p>Date de fin de la location : 14/10/2024</p>
+                            <p>Durée de la location : 13 jours</p>
+                            <p>Lieu de location : Lille</p>
+                            <p>Description de l'état du bien : Très bonne état</p>
+                            <p>Incidents ou dommages : N/A</p>
+                            <p>Pannes ou réparations : N/A</p>
+                            <p>Retour du bien : Très bonne état</p>
+                            <p>Notes sur le locataire : ⭐⭐⭐⭐⭐</p>
+                            <p>Montant de la location : 8.30€</p>
+                            <a href="#"><center>En savoir plus</center></a>
+                        </div>
+                    </div>
+        
+                    <div class="destination">
+                        <p class="style">Nissan Leaf</p>
+                        <img src="../../img/voiture.png" alt="img" width="150px">
+                        <div class="detail">
+                            <p>Date de début de la location : 22/08/2024</p>
+                            <p>Date de fin de la location : 02/09/2024</p>
+                            <p>Durée de la location : 12 jours</p>
+                            <p>Lieu de location : Tourcoing</p>
+                            <p>Description de l'état du bien : Neuf</p>
+                            <p>Incidents ou dommages : N/A</p>
+                            <p>Pannes ou réparations : N/A</p>
+                            <p>Retour du bien : Très bonne état</p>
+                            <p>Notes sur le locataire : ⭐⭐⭐⭐⭐</p>
+                            <p>Montant de la location : 9.99€</p>
+                            <a href="#"><center>En savoir plus</center></a>
+                        </div>
+                    </div>
+                </div>
+                <center><div class="plus">Voir davantage</div></center>
+            </div>
+
+            <div id="paiement">
+                <p class="title">Paiements & Abonnements</p>
+                <p>Informations de paiement, vos transactions et vos réservations</p>
+                <div class="container">
+                    <div class="header">
+                        <div class="description">
+                            <p class="heading">Moyens de paiement</p>
+                            <p>Les modes de paiement sont enregistrés dans votre compte Google afin que vous puissiez les utiliser dans tous les services Google, tels que YouTube.</p>
+                        </div>
+                        <div class="img">
+                            <img src="../../img/g-paiement.png" alt="icon" width="600px">
+                        </div>
+                    </div>
+
+                    <div class="main">
+                        <div class="methods">
+                            <p>Carte Bancaire : VISA-1313</p>
+                            <center><img src="../../img/sans-contact.png" alt="icon"></center>
+                            <div class="footer">
+                                <p>Modifier</p>
+                                <p>Supprimer</p>
+                            </div>
+                        </div>
+                        <div class="methods">
+                            <p>PaySafeCard : ••••@gmail.com</p>
+                            <center><img src="../../img/symboles.png" alt="icon"></center>
+                            <div class="footer">
+                                <p>Modifier</p>
+                                <p>Supprimer</p>
+                            </div>
+                        </div>
+                        <div class="add">
+                            <p>+ Ajouter un mode de paiement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="header">
+                        <div class="description">
+                            <p class="heading">Transaction Google Green</p>
+                            <p>Les transactions sont enregistrées dans votre compte afin de faciliter vos paiements dans tous les services associés à Google Green, comme les locations, les trajets, etc.</p>
+                        </div>
+                        <div class="img">
+                            <img src="../../img/transaction-monetaire.png" alt="icon" width="400px">
+                        </div>
+                    </div>
+
+                    <div class="contenu">
+                            <ul>
+                                <li class="gauche">Location : Gazelle Ultimate T10</li>
+                                <li class="milieu">29/11/2024</li>
+                                <li class="droite">1.50€</li>   
+                            </ul>
+
+                            <ul>
+                                <li class="gauche">Recherche de trajet : Lyon - Rue du Premier Film</li>
+                                <li class="milieu">21/10/2024</li>
+                                <li class="droite">5.50€</li> 
+                            </ul>
+
+                            <ul>
+                                <li class="gauche">Location : Dualtron Ultra 2</li>
+                                <li class="milieu">01/10/2024</li>
+                                <li class="droite">8.30€</li>  
+                            </ul>
+
+                            <ul>
+                                <li class="gauche">Location : Nissan Leaf</li>
+                                <li class="milieu">22/08/2024</li>
+                                <li class="droite">9.99€</li>   
+                            </ul>
+
+                        <div class="plus">
+                            <p>Afficher plus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="header">
+                        <div class="description">
+                            <p class="heading">Réservation Google Green</p>
+                            <p>Vos réservations passées et à venir pour des trajets et des locations effectuées via les services proposées.</p>
+                        </div>
+                        <div class="img">
+                            <img src="../../img/reservation.png" alt="icon" width="600px">
+                        </div>
+                    </div>
+
+                    <div class="contenu">
+                        <div class="plus">
+                            <p>Aucune réservation durant vos parcours</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="reseaux">
+            <ul>
+                <li>Suivez-nous</li>
+                <li><a href="https://instagram.com/google/"><img src="../../img/instagram.png" alt="instagram" width="25px"></a></li>
+                <li><a href="https://www.youtube.com/user/Google"><img src="../../img/youtube.png" alt="youtube" width="25px"></a></li>
+                <li><a href="https://twitter.com/google"><img src="../../img/twitter.png" alt="twitter" width="25px"></a></li>
+                <li><a href="https://www.facebook.com/Google"><img src="../../img/facebook.png" alt="facebook" width="25px"></a></li>
+                <li><a href="https://www.linkedin.com/company/google"><img src="../../img/linkedin.png" alt="linkedin" width="25px"></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <a href="https://www.google.com/?_ga=2.55847531.1749503220.1732133987-83650453.1732122980"><img src="../../img/glue-google-solid-logo.svg" alt="logo"></a>
+                <li><a href="https://support.google.com/?hl=ALL">Aide</a></li>
+                <li><a href="https://www.google.com/policies/privacy/">Confidentialité</a></li>
+                <li><a href="https://www.google.com/policies/terms/">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

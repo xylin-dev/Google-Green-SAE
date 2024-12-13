@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louer un véhicule - Google Green</title>
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon-accueil.webp" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>         
+            <img src="img/logo.png" width="180px" alt="logo">
+            <li><a href="index.html">Accueil</a></li>
+            <li>Services
+                <ul class="menu">
+                    <li><a href="-html/proposer.html">Proposer un trajet</a></li>
+                    <li><a href="-html/rechercher.html">Recherche de trajet</a></li>
+                    <li><a href="-html/location.html">Louer un véhicule</a></li>
+                </ul>
+            </li>
+            <li><a href="-html/contact.html">Contact</a></li>
+            <li><a href="-html/newsletter.html">Newsletter</a></li>
+        </ul>
+        <a href="-html/login/login.html" class="login">Se Connecter</a>
+    </nav>
+
+    <main>
+        <div>
+            <p>
+                Nous pouvons vous mettre à disposition des véhicules de mobilité urbaine à faible impact environnemental. Si vous avez un souci avec votre véhicule personnel, ou que vous avez un permis mais que vous ne voulez pas enregistrer des coûts supplémentaires en entretien ou souscription d'assurances, ce service peut vous intéresser. Veuillez pour cela remplir le formulaire ci-dessous pour que nous puissions traiter votre demande dans les 48h. 
+            </p>
+            <img src="img/tempoimglocat.jpeg" width="180px" alt="logo_locat">
+        </div>
+        <form id="formulaire">
+
+            <fieldset id="choixMobilité">
+                <fieldset>
+                    <img src="img/velo.jpg" width="180px" alt="vélo">
+                    <h4>Vélo</h4>
+                    <input type="radio" name="location" id="envelo">
+                </fieldset>
+                <fieldset>
+                    <img src="img/trot.jpg" width="180px" alt="trotinette">
+                    <h4>Trottinette</h4>
+                    <input type="radio" name="location" id="entrott">
+                    
+                </fieldset>
+                <fieldset>
+                    <img src="img/voiture.png" width="180px" alt="voiture électrique">
+                    <h4>Voiture</h4>
+                    <input type="radio" name="location" id="envoit">
+                </fieldset>
+                <fieldset>
+                    <img src="img/motov.png" width="180px" alt="en moto">
+                    <h4>Moto</h4>
+                    <input type="radio" name="location" id="enmoto">
+                </fieldset>
+            </fieldset>
+            <fieldset id="infos">
+                <div id="infos-1">
+                    <input type="text" placeholder="Nom" id="nom" minlength="3"/>
+                    <input type="text" placeholder="Prénom" id="prénom" minlength="3"/>
+                    <input type="email" placeholder="Adresse mail" id="mail" pattern=".+@google\.com"/>
+                    <input type="tel" placeholder="Numéro de téléphone" id="numTel"/>
+                    
+                </div>
+                <div id="infos-2">
+                    <input type="text" placeholder="numéro carte bancaire" id="cb"minlength="10" maxlength="19"/>
+                    <input type="text" placeholder="date d'expiration mm/yy" id="exp" pattern="[0-9]/[0-9]" /> 
+                    <input type="text" placeholder="CVC" id="cvc" maxlength="3"/>
+                </div>
+                <div id="infos-3">
+                    <label for="dateLoc">À quelle date souhaitez vous louer ce véhicule ? : </label>
+                    <input type="date" id="dateLoc"/>
+                </div>
+            </fieldset>
+            <input type="submit" value="Envoyer le formulaire" href="-html/confirmer.html"/>
+            <input type="reset" value="Réinitialiser votre demande" href="-html/confirmer.html"/>
+        </form>
+    </main>
+
+    <footer>
+        <div class="reseaux">
+            <ul>
+                <li>Suivez-nous</li>
+                <li><a href="https://instagram.com/google/"><img src="img/instagram.png" alt="instagram" width="25px"></a></li>
+                <li><a href="https://www.youtube.com/user/Google"><img src="img/youtube.png" alt="youtube" width="25px"></a></li>
+                <li><a href="https://twitter.com/google"><img src="img/twitter.png" alt="twitter" width="25px"></a></li>
+                <li><a href="https://www.facebook.com/Google"><img src="img/facebook.png" alt="facebook" width="25px"></a></li>
+                <li><a href="https://www.linkedin.com/company/google"><img src="img/linkedin.png" alt="linkedin" width="25px"></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <a href="https://www.google.com/?_ga=2.55847531.1749503220.1732133987-83650453.1732122980"><img src="img/glue-google-solid-logo.svg" alt="logo"></a>
+                <li><a href="https://support.google.com/?hl=ALL">Aide</a></li>
+                <li><a href="https://www.google.com/policies/privacy/">Confidentialité</a></li>
+                <li><a href="https://www.google.com/policies/terms/">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
